@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27D7FED12B3D3D7900831520 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D7FED02B3D3D7900831520 /* CategoryViewController.swift */; };
 		CC4830F22B3A83630073EA81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4830F12B3A83630073EA81 /* AppDelegate.swift */; };
 		CC4830F42B3A83630073EA81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4830F32B3A83630073EA81 /* SceneDelegate.swift */; };
 		CC4830F62B3A83630073EA81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC4830F52B3A83630073EA81 /* ViewController.swift */; };
@@ -17,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		27D7FED02B3D3D7900831520 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		CC4830EE2B3A83630073EA81 /* BURGER4JO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BURGER4JO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC4830F12B3A83630073EA81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CC4830F32B3A83630073EA81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				CC4830FA2B3A83650073EA81 /* Assets.xcassets */,
 				CC4830FC2B3A83650073EA81 /* LaunchScreen.storyboard */,
 				CC4830FF2B3A83650073EA81 /* Info.plist */,
-				27D7FED02B3D3D7900831520 /* CategoryViewController.swift */,
 			);
 			path = BURGER4JO;
 			sourceTree = "<group>";
@@ -141,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27D7FED12B3D3D7900831520 /* CategoryViewController.swift in Sources */,
 				CC4830F62B3A83630073EA81 /* ViewController.swift in Sources */,
 				CC4830F22B3A83630073EA81 /* AppDelegate.swift in Sources */,
 				CC4830F42B3A83630073EA81 /* SceneDelegate.swift in Sources */,
@@ -296,8 +292,6 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -324,8 +318,6 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
