@@ -13,6 +13,8 @@
 		CC4830F92B3A83630073EA81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4830F72B3A83630073EA81 /* Main.storyboard */; };
 		CC4830FB2B3A83650073EA81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4830FA2B3A83650073EA81 /* Assets.xcassets */; };
 		CC4830FE2B3A83650073EA81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4830FC2B3A83650073EA81 /* LaunchScreen.storyboard */; };
+		CC8C4BB32B3E693F00DFAB3B /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C4BB22B3E693E00DFAB3B /* CategoryViewController.swift */; };
+		CC8C4BB52B3E6A6D00DFAB3B /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C4BB42B3E6A6D00DFAB3B /* OrderTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		CC4830FA2B3A83650073EA81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC4830FD2B3A83650073EA81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4830FF2B3A83650073EA81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC8C4BB22B3E693E00DFAB3B /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		CC8C4BB42B3E6A6D00DFAB3B /* OrderTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				CC4830FA2B3A83650073EA81 /* Assets.xcassets */,
 				CC4830FC2B3A83650073EA81 /* LaunchScreen.storyboard */,
 				CC4830FF2B3A83650073EA81 /* Info.plist */,
+				CC8C4BB22B3E693E00DFAB3B /* CategoryViewController.swift */,
+				CC8C4BB42B3E6A6D00DFAB3B /* OrderTableViewController.swift */,
 			);
 			path = BURGER4JO;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8C4BB32B3E693F00DFAB3B /* CategoryViewController.swift in Sources */,
+				CC8C4BB52B3E6A6D00DFAB3B /* OrderTableViewController.swift in Sources */,
 				CC4830F62B3A83630073EA81 /* ViewController.swift in Sources */,
 				CC4830F22B3A83630073EA81 /* AppDelegate.swift in Sources */,
 				CC4830F42B3A83630073EA81 /* SceneDelegate.swift in Sources */,
