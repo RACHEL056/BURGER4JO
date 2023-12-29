@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// 임시 구조체
 struct Menu {
     let name: String
     let price: Int
@@ -17,7 +18,7 @@ struct Menu {
 class OrderTableViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-    
+    //임시 메뉴 세팅
     var menuItems: [Menu] = [
         Menu(name: "불고기 버거", price: 2500, quantity: 0),
         Menu(name: "치즈 버거", price: 3000, quantity: 0),
@@ -40,6 +41,8 @@ class OrderTableViewController: UIViewController, UITableViewDataSource, UITable
         
         let menuItem = menuItems[indexPath.row]
         cell.textLabel?.text = "\(menuItem.name) | $\(menuItem.price) | 수량: \(menuItem.quantity)"
+        cell.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
+        cell.textLabel?.textColor = .black
 
         return cell
     }
