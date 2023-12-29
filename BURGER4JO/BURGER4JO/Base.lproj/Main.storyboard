@@ -66,11 +66,6 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <connections>
-                        <outlet property="burgerButton" destination="FwJ-Bx-L87" id="bjM-Ra-y4Z"/>
-                        <outlet property="drinkButton" destination="fEX-0V-mU4" id="W7q-Hk-8FY"/>
-                        <outlet property="sideButton" destination="eQT-Bl-pDD" id="cAj-9C-Ftd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
