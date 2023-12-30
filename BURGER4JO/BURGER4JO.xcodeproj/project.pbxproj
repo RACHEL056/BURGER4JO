@@ -13,9 +13,6 @@
 		CC4830F92B3A83630073EA81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4830F72B3A83630073EA81 /* Main.storyboard */; };
 		CC4830FB2B3A83650073EA81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC4830FA2B3A83650073EA81 /* Assets.xcassets */; };
 		CC4830FE2B3A83650073EA81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC4830FC2B3A83650073EA81 /* LaunchScreen.storyboard */; };
-		CC8C4BB72B3E702300DFAB3B /* BurgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C4BB62B3E702300DFAB3B /* BurgerViewController.swift */; };
-		CC8C4BB92B3E703000DFAB3B /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C4BB82B3E703000DFAB3B /* SideViewController.swift */; };
-		CC8C4BBB2B3E703E00DFAB3B /* DrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC8C4BBA2B3E703E00DFAB3B /* DrinkViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +24,6 @@
 		CC4830FA2B3A83650073EA81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CC4830FD2B3A83650073EA81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CC4830FF2B3A83650073EA81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC8C4BB62B3E702300DFAB3B /* BurgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerViewController.swift; sourceTree = "<group>"; };
-		CC8C4BB82B3E703000DFAB3B /* SideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideViewController.swift; sourceTree = "<group>"; };
-		CC8C4BBA2B3E703E00DFAB3B /* DrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +59,6 @@
 				CC4830F12B3A83630073EA81 /* AppDelegate.swift */,
 				CC4830F32B3A83630073EA81 /* SceneDelegate.swift */,
 				CC4830F52B3A83630073EA81 /* ViewController.swift */,
-				CC8C4BB62B3E702300DFAB3B /* BurgerViewController.swift */,
-				CC8C4BB82B3E703000DFAB3B /* SideViewController.swift */,
-				CC8C4BBA2B3E703E00DFAB3B /* DrinkViewController.swift */,
 				CC4830F72B3A83630073EA81 /* Main.storyboard */,
 				CC4830FA2B3A83650073EA81 /* Assets.xcassets */,
 				CC4830FC2B3A83650073EA81 /* LaunchScreen.storyboard */,
@@ -148,11 +139,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC4830F62B3A83630073EA81 /* ViewController.swift in Sources */,
-				CC8C4BBB2B3E703E00DFAB3B /* DrinkViewController.swift in Sources */,
 				CC4830F22B3A83630073EA81 /* AppDelegate.swift in Sources */,
 				CC4830F42B3A83630073EA81 /* SceneDelegate.swift in Sources */,
-				CC8C4BB72B3E702300DFAB3B /* BurgerViewController.swift in Sources */,
-				CC8C4BB92B3E703000DFAB3B /* SideViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
