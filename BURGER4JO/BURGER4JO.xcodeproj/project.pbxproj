@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E8C38C42B400C4D00C2241A /* DrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C38C32B400C4D00C2241A /* DrinkViewController.swift */; };
+		4E8C38C82B400D8E00C2241A /* DrinkStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C38C72B400D8E00C2241A /* DrinkStoryboard.storyboard */; };
+		4E8C38D02B401ACA00C2241A /* DrinkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C38CF2B401ACA00C2241A /* DrinkCollectionViewCell.swift */; };
+		4E8C38D22B4021CF00C2241A /* SideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C38D12B4021CF00C2241A /* SideCollectionViewCell.swift */; };
+		4E8C38D42B4021E500C2241A /* SideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8C38D32B4021E500C2241A /* SideViewController.swift */; };
+		4E8C38D62B40221300C2241A /* SideStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E8C38D52B40221300C2241A /* SideStoryboard.storyboard */; };
 		4EF7D1F32B3C6E7500FF05D8 /* BurgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7D1F22B3C6E7500FF05D8 /* BurgerViewController.swift */; };
 		4EF7D1F52B3C6EB700FF05D8 /* BurgerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF7D1F42B3C6EB700FF05D8 /* BurgerStoryboard.storyboard */; };
 		4EF7D1F92B3C808000FF05D8 /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7D1F82B3C808000FF05D8 /* MenuCollectionViewCell.swift */; };
@@ -19,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E8C38C32B400C4D00C2241A /* DrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkViewController.swift; sourceTree = "<group>"; };
+		4E8C38C72B400D8E00C2241A /* DrinkStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DrinkStoryboard.storyboard; sourceTree = "<group>"; };
+		4E8C38CF2B401ACA00C2241A /* DrinkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E8C38D12B4021CF00C2241A /* SideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideCollectionViewCell.swift; sourceTree = "<group>"; };
+		4E8C38D32B4021E500C2241A /* SideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideViewController.swift; sourceTree = "<group>"; };
+		4E8C38D52B40221300C2241A /* SideStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SideStoryboard.storyboard; sourceTree = "<group>"; };
 		4EF7D1F22B3C6E7500FF05D8 /* BurgerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurgerViewController.swift; sourceTree = "<group>"; };
 		4EF7D1F42B3C6EB700FF05D8 /* BurgerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BurgerStoryboard.storyboard; sourceTree = "<group>"; };
 		4EF7D1F82B3C808000FF05D8 /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -72,6 +84,12 @@
 				4EF7D1F82B3C808000FF05D8 /* MenuCollectionViewCell.swift */,
 				4EF7D1F22B3C6E7500FF05D8 /* BurgerViewController.swift */,
 				4EF7D1F42B3C6EB700FF05D8 /* BurgerStoryboard.storyboard */,
+				4E8C38CF2B401ACA00C2241A /* DrinkCollectionViewCell.swift */,
+				4E8C38C32B400C4D00C2241A /* DrinkViewController.swift */,
+				4E8C38C72B400D8E00C2241A /* DrinkStoryboard.storyboard */,
+				4E8C38D12B4021CF00C2241A /* SideCollectionViewCell.swift */,
+				4E8C38D32B4021E500C2241A /* SideViewController.swift */,
+				4E8C38D52B40221300C2241A /* SideStoryboard.storyboard */,
 			);
 			path = BURGER4JO;
 			sourceTree = "<group>";
@@ -136,7 +154,9 @@
 			files = (
 				CC4830FE2B3A83650073EA81 /* LaunchScreen.storyboard in Resources */,
 				CC4830FB2B3A83650073EA81 /* Assets.xcassets in Resources */,
+				4E8C38C82B400D8E00C2241A /* DrinkStoryboard.storyboard in Resources */,
 				4EF7D1F52B3C6EB700FF05D8 /* BurgerStoryboard.storyboard in Resources */,
+				4E8C38D62B40221300C2241A /* SideStoryboard.storyboard in Resources */,
 				CC4830F92B3A83630073EA81 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,6 +170,10 @@
 			files = (
 				CC4830F62B3A83630073EA81 /* ViewController.swift in Sources */,
 				CC4830F22B3A83630073EA81 /* AppDelegate.swift in Sources */,
+				4E8C38D42B4021E500C2241A /* SideViewController.swift in Sources */,
+				4E8C38D02B401ACA00C2241A /* DrinkCollectionViewCell.swift in Sources */,
+				4E8C38D22B4021CF00C2241A /* SideCollectionViewCell.swift in Sources */,
+				4E8C38C42B400C4D00C2241A /* DrinkViewController.swift in Sources */,
 				CC4830F42B3A83630073EA81 /* SceneDelegate.swift in Sources */,
 				4EF7D1F32B3C6E7500FF05D8 /* BurgerViewController.swift in Sources */,
 				4EF7D1F92B3C808000FF05D8 /* MenuCollectionViewCell.swift in Sources */,
