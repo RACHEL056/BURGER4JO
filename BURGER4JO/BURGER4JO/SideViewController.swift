@@ -72,8 +72,9 @@ class SideViewController: UIViewController, UICollectionViewDelegate, UICollecti
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        SideCollectionView.delegate = self
-        SideCollectionView.dataSource = self
+        view.backgroundColor = UIColor(#colorLiteral(red: 1, green: 0.6729137301, blue: 0.3843368888, alpha: 1))
+        SideCollectionView?.delegate = self
+        SideCollectionView?.dataSource = self
 
         // Do any additional setup after loading the view.
     }

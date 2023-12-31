@@ -69,22 +69,11 @@ class DrinkViewController: UIViewController, UICollectionViewDelegate, UICollect
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        DrinkCollectionView.delegate = self
-        DrinkCollectionView.dataSource = self
         
-        // Do any additional setup after loading the view.
-    }
-    
+        view.backgroundColor = UIColor(#colorLiteral(red: 1, green: 0.6729137301, blue: 0.3843368888, alpha: 1))
+        DrinkCollectionView?.delegate = self
+        DrinkCollectionView?.dataSource = self
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
 
 }
