@@ -8,6 +8,8 @@
 import UIKit
 
 class BurgerViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    let menuList = ["BulgogiBurger", "CheeseBurger", "ChickenBurger", "ShrimpBurger"]
+    let menuCost = [4500, 5000, 4700, 4800]
     
     @IBOutlet weak var BurgerCollectionView: UICollectionView!
     
@@ -26,7 +28,7 @@ class BurgerViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MenuCollectionViewCell", for: indexPath) as! MenuCollectionViewCell
         
-        let menuList = ["BulgogiBurger", "CheeseBurger", "ChickenBurger", "ShrimpBurger"]
+//        let menuList = ["BulgogiBurger", "CheeseBurger", "ChickenBurger", "ShrimpBurger"]
         let currentMenu = menuList[indexPath.row]
         
         cell.setup(with: currentMenu, menuName: currentMenu)
@@ -60,11 +62,19 @@ class BurgerViewController: UIViewController, UICollectionViewDelegate, UICollec
            present(alert, animated: true, completion: nil)
        }
        
-       func addToCart() {
-           // 여기에 실제로 장바구니에 추가하는 로직을 구현
-           print("장바구니에 제품이 추가되었습니다.")
-       }
-    
+    func addToCart() {
+        // 메인 뷰 컨트롤러에 메뉴 정보를 전달
+     let selectedMenuIndex = BurgerCollectionView.indexPathsForSelectedItems?.first?.row ?? 0
+     let selectedMenu = menuList[selectedMenuIndex]
+     let selectedCost = menuCost[selectedMenuIndex]
+
+            // 메인 뷰 컨트롤러에 메뉴 정보를 전달
+         if let mainViewController = presentingViewController as? ViewController {
+             let menu = Menu(name: selectedMenu, price: selectedCost, quantity: 1)
+             mainViewController.updateCart(with: menu)
+            }
+        print("장바구니에 제품이 추가되었습니다.")
+    }
     // 여기에 viewDidLoad 추가
     override func viewDidLoad() {
         super.viewDidLoad()

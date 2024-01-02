@@ -8,6 +8,8 @@
 import UIKit
 
 class DrinkViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    let DrinkList = ["Cola", "Cider", "Water", "Coffee"]
+    let DrinkCost = [1000, 1000, 700, 1200]
     
     @IBOutlet weak var DrinkCollectionView: UICollectionView!
     
@@ -26,7 +28,7 @@ class DrinkViewController: UIViewController, UICollectionViewDelegate, UICollect
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "DrinkCollectionViewCell", for: indexPath) as! DrinkCollectionViewCell
         
-        let DrinkList = ["Cola", "Cider", "Water", "Coffee"]
+//        let DrinkList = ["Cola", "Cider", "Water", "Coffee"]
         let currentDrink = DrinkList[indexPath.row]
         
         cell.setup(with: currentDrink, menuName: currentDrink)
@@ -62,10 +64,19 @@ class DrinkViewController: UIViewController, UICollectionViewDelegate, UICollect
            present(alert, animated: true, completion: nil)
        }
 
-       func addToCart() {
-           // 여기에 실제로 장바구니에 추가하는 로직을 구현
-           print("장바구니에 제품이 추가되었습니다.")
-       }
+    func addToCart() {
+        // 메인 뷰 컨트롤러에 메뉴 정보를 전달
+     let selectedMenuIndex = DrinkCollectionView.indexPathsForSelectedItems?.first?.row ?? 0
+     let selectedMenu = DrinkList[selectedMenuIndex]
+     let selectedCost = DrinkCost[selectedMenuIndex]
+
+            // 메인 뷰 컨트롤러에 메뉴 정보를 전달
+         if let mainViewController = presentingViewController as? ViewController {
+             let menu = Menu(name: selectedMenu, price: selectedCost, quantity: 1)
+             mainViewController.updateCart(with: menu)
+            }
+        print("장바구니에 제품이 추가되었습니다.")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
