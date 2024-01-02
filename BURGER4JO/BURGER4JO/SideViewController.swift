@@ -8,6 +8,8 @@
 import UIKit
 
 class SideViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    let SideList = ["CheeseBall", "CheeseStick", "BuffaloWings", "IceCream"]
+    let SideCost = [2000, 2200, 3000, 1500]
     
     @IBOutlet weak var SideCollectionView: UICollectionView!
     
@@ -26,7 +28,7 @@ class SideViewController: UIViewController, UICollectionViewDelegate, UICollecti
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SideCollectionViewCell", for: indexPath) as! SideCollectionViewCell
         
-        let SideList = ["CheeseBall", "CheeseStick", "BuffaloWings", "IceCream"]
+//        let SideList = ["CheeseBall", "CheeseStick", "BuffaloWings", "IceCream"]
         let currentSide = SideList[indexPath.row]
         
         cell.setup(with: currentSide, menuName: currentSide)
@@ -61,10 +63,19 @@ class SideViewController: UIViewController, UICollectionViewDelegate, UICollecti
            present(alert, animated: true, completion: nil)
        }
 
-       func addToCart() {
-           // 여기에 실제로 장바구니에 추가하는 로직을 구현
-           print("장바구니에 제품이 추가되었습니다.")
-       }
+    func addToCart() {
+        // 메인 뷰 컨트롤러에 메뉴 정보를 전달
+     let selectedMenuIndex = SideCollectionView.indexPathsForSelectedItems?.first?.row ?? 0
+     let selectedMenu = SideList[selectedMenuIndex]
+     let selectedCost = SideCost[selectedMenuIndex]
+
+            // 메인 뷰 컨트롤러에 메뉴 정보를 전달
+         if let mainViewController = presentingViewController as? ViewController {
+             let menu = Menu(name: selectedMenu, price: selectedCost, quantity: 1)
+             mainViewController.updateCart(with: menu)
+            }
+        print("장바구니에 제품이 추가되었습니다.")
+    }
     
 
     

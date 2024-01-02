@@ -9,9 +9,29 @@ struct Menu {
     var quantity: Int
 }
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+//장바구니 프로토콜
+protocol CartDelegate: AnyObject {
+    func updateCart(with menu: Menu)
+}
+
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, CartDelegate {
+    
+    //장바구니를 업데이트하는 함수
+    func updateCart(with menu: Menu) {
+            menuItems.append(menu)
+            tableView.reloadData()
+        
+        updateTotalPrice()
+        }
+    
+    //총 금액
+    func updateTotalPrice() {
+        let totalPrice = menuItems.reduce(0) { $0 + ($1.price * $1.quantity) }
+        totalcost.text = "$\(totalPrice)"
+    }
     
     @IBOutlet weak var coverimage: UIImageView!
+    @IBOutlet weak var totalcost: UILabel!
     
     //하단의 취소/결제 버튼 동작
     @IBAction func cancelAlertButton(_ sender: Any) {
@@ -19,12 +39,13 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let message = "주문을 취소하실 경우 확인을 눌러주세요"
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
 
-            //되돌아가기 기능
+        //되돌아가기 기능
         let back = UIAlertAction(title: "취소", style: .cancel)
-            //취소 확인 기능 - 이후에 장바구니에 담긴 항목들이 사라지도록 만들면 좋을 것 같음
+        //취소 확인 기능 - 이후에 장바구니에 담긴 항목들이 사라지도록 만들면 좋을 것 같음
         let cancelOK = UIAlertAction(title: "확인", style: .default) { [weak self] _ in
             self?.menuItems = []
             self?.tableView.reloadData()
+            self?.totalcost.text = "0"
         }
 
         alert.addAction(back)
@@ -52,12 +73,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     // MARK: - Properties
     
     @IBOutlet weak var tableView: UITableView!
+    
     // tableView 임시 메뉴 세팅
-    var menuItems: [Menu] = [
-        Menu(name: "불고기 버거", price: 2500, quantity: 0),
-        Menu(name: "치즈 버거", price: 3000, quantity: 0),
-        Menu(name: "사이다", price: 1500, quantity: 0)
-    ]
+    var menuItems: [Menu] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,6 +112,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if editingStyle == .delete {
             menuItems.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .automatic)
+            updateTotalPrice()
         }
     }
     
@@ -116,6 +135,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
             
             self?.menuItems[indexPath.row].quantity = quantity
             self?.tableView.reloadRows(at: [indexPath], with: .automatic)
+            
+            self?.updateTotalPrice()
         }
         
         let cancelAction = UIAlertAction(title: "취소", style: .cancel, handler: nil)
